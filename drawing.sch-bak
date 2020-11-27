@@ -1,0 +1,241 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5FB4FA53
+P 4400 2800
+F 0 "D1" V 4439 2682 50  0000 R CNN
+F 1 "LED" V 4348 2682 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 4400 2800 50  0001 C CNN
+F 3 "~" H 4400 2800 50  0001 C CNN
+	1    4400 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5FB5093A
+P 3575 3300
+F 0 "BT1" H 3693 3396 50  0000 L CNN
+F 1 "Battery_Cell" H 3693 3305 50  0000 L CNN
+F 2 "Battery:BatteryHolder_MPD_BC2003_1x2032" V 3575 3360 50  0001 C CNN
+F 3 "~" V 3575 3360 50  0001 C CNN
+	1    3575 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FB52155
+P 3575 2775
+F 0 "R1" H 3645 2821 50  0000 L CNN
+F 1 "R" H 3645 2730 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3505 2775 50  0001 C CNN
+F 3 "~" H 3575 2775 50  0001 C CNN
+	1    3575 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5FB53CB9
+P 4750 2800
+F 0 "D2" V 4789 2682 50  0000 R CNN
+F 1 "LED" V 4698 2682 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 4750 2800 50  0001 C CNN
+F 3 "~" H 4750 2800 50  0001 C CNN
+	1    4750 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5FB541BE
+P 5050 2800
+F 0 "D3" V 5089 2682 50  0000 R CNN
+F 1 "LED" V 4998 2682 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 5050 2800 50  0001 C CNN
+F 3 "~" H 5050 2800 50  0001 C CNN
+	1    5050 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3575 3100 3575 2925
+Wire Wire Line
+	4400 2625 4400 2650
+Wire Wire Line
+	4400 2625 4750 2625
+Wire Wire Line
+	4750 2625 4750 2650
+Wire Wire Line
+	4750 2625 5050 2625
+Wire Wire Line
+	5050 2625 5050 2650
+Connection ~ 4750 2625
+Wire Wire Line
+	5050 3400 4750 3400
+Wire Wire Line
+	4750 2950 4750 3400
+Connection ~ 4750 3400
+Wire Wire Line
+	4750 3400 4400 3400
+Wire Wire Line
+	4400 2950 4400 3400
+Connection ~ 4400 3400
+Wire Wire Line
+	4400 3400 3575 3400
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5FB57F06
+P 4025 2275
+F 0 "SW1" H 4025 2560 50  0000 C CNN
+F 1 "SW_SPDT" H 4025 2469 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 4025 2275 50  0001 C CNN
+F 3 "~" H 4025 2275 50  0001 C CNN
+	1    4025 2275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3575 2625 3575 2275
+Wire Wire Line
+	3575 2275 3825 2275
+Wire Wire Line
+	4225 2175 4400 2175
+Wire Wire Line
+	4400 2175 4400 2625
+Connection ~ 4400 2625
+NoConn ~ 4225 2375
+NoConn ~ 3250 3750
+Text Label 3575 3025 0    50   ~ 0
+Vin
+Text Label 3575 2475 0    50   ~ 0
+VRes
+Text Label 4400 2450 0    50   ~ 0
+VRes
+Text Label 4125 3400 0    50   ~ 0
+GND
+$Comp
+L Device:LED D4
+U 1 1 5FB55444
+P 5225 2800
+F 0 "D4" V 5264 2682 50  0000 R CNN
+F 1 "LED" V 5173 2682 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 5225 2800 50  0001 C CNN
+F 3 "~" H 5225 2800 50  0001 C CNN
+	1    5225 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5FB5544A
+P 5575 2800
+F 0 "D5" V 5614 2682 50  0000 R CNN
+F 1 "LED" V 5523 2682 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 5575 2800 50  0001 C CNN
+F 3 "~" H 5575 2800 50  0001 C CNN
+	1    5575 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5FB55450
+P 5875 2800
+F 0 "D6" V 5914 2682 50  0000 R CNN
+F 1 "LED" V 5823 2682 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 5875 2800 50  0001 C CNN
+F 3 "~" H 5875 2800 50  0001 C CNN
+	1    5875 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5225 2625 5225 2650
+Wire Wire Line
+	5225 2625 5575 2625
+Wire Wire Line
+	5575 2625 5575 2650
+Wire Wire Line
+	5575 2625 5875 2625
+Wire Wire Line
+	5875 2625 5875 2650
+Connection ~ 5575 2625
+Wire Wire Line
+	5875 3400 5575 3400
+Wire Wire Line
+	5875 2950 5875 3400
+Wire Wire Line
+	5575 2950 5575 3400
+Connection ~ 5575 3400
+Wire Wire Line
+	5575 3400 5225 3400
+Wire Wire Line
+	5225 2950 5225 3400
+Wire Wire Line
+	5050 2625 5225 2625
+Connection ~ 5050 2625
+Connection ~ 5225 2625
+Wire Wire Line
+	5050 2950 5050 3400
+Wire Wire Line
+	5225 3400 5050 3400
+Connection ~ 5225 3400
+Connection ~ 5050 3400
+$Comp
+L Device:LED D7
+U 1 1 5FB4ADED
+P 6225 2800
+F 0 "D7" V 6264 2682 50  0000 R CNN
+F 1 "LED" V 6173 2682 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 6225 2800 50  0001 C CNN
+F 3 "~" H 6225 2800 50  0001 C CNN
+	1    6225 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 5FB4ADF3
+P 6525 2800
+F 0 "D8" V 6564 2682 50  0000 R CNN
+F 1 "LED" V 6473 2682 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 6525 2800 50  0001 C CNN
+F 3 "~" H 6525 2800 50  0001 C CNN
+	1    6525 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5875 2625 5975 2625
+Wire Wire Line
+	6225 2625 6225 2650
+Wire Wire Line
+	6225 2625 6525 2625
+Wire Wire Line
+	6525 2625 6525 2650
+Connection ~ 6225 2625
+Wire Wire Line
+	6525 3400 6225 3400
+Wire Wire Line
+	6525 2950 6525 3400
+Wire Wire Line
+	6225 2950 6225 3400
+Connection ~ 6225 3400
+Connection ~ 5950 3400
+Wire Wire Line
+	5950 3400 5875 3400
+Connection ~ 5875 3400
+Wire Wire Line
+	5975 2625 5875 2625
+Wire Wire Line
+	5875 3400 6225 3400
+Connection ~ 5975 2625
+Wire Wire Line
+	5975 2625 6225 2625
+Connection ~ 5875 2625
+$EndSCHEMATC
